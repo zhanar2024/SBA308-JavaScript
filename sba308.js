@@ -100,23 +100,6 @@ const result = getLearnerData(CourseInfo, AssignmentGroup, LearnerSubmissions);
 
 console.log(result);
 
-// function getLearnerData(courseInfo, assignmentGroup, learnerSubmissions) {
-//   validateInput(courseInfo, assignmentGroup, learnerSubmissions);
-//   if (assignmentGroup.course_id !== courseInfo.id) {
-//     throw new Error(
-//       "Invalid input: Assignment group does not belong to the specified course."
-//     );
-//   }
-
-//   // Process learner submissions
-//   let learnerData = processLearnerSubmissions(
-//     assignmentGroup,
-//     learnerSubmissions
-//   );
-
-//   return learnerData;
-// }
-
 function validateInput(courseInfo, assignmentGroup, learnerSubmissions) {
   if (
     !courseInfo ||
